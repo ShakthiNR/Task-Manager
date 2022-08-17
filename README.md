@@ -4,7 +4,7 @@ TaskManager - web application used to manage the tasks effectively. create categ
 
 
 Tech Stacks:
-  1. React with Typescript
+  1. React Js with Redux ToolKit (to manage the states globally)
   2. Tailwind Css
   3. Django API
   4. Sqlite 3 as dB
