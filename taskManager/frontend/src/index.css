@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ body {
+  @apply bg-gray-200;
+}
+ 
+
+@layer components{
+
+  .inputLayout{
+    @apply flex flex-col gap-y-5  justify-center 
+  }
+  .input-category{
+    @apply border font-mono border-gray-300  bg-gray-100 focus:outline-none focus:border-blue-200 active:outline-none w-full  md:rounded-l-md
+    text-sm lg:text-base lg:text-[16px] px-2 py-1 placeholder:text-gray-400  caret-gray-500
+  }
+  .inputTasks{
+    @apply border font-mono border-gray-300  bg-gray-100 focus:outline-none focus:border-blue-200 active:outline-none  
+    w-full md:rounded-l-md mr-2
+    text-sm lg:text-base lg:text-[16px] px-2 py-1 mt-3 placeholder:text-gray-400  caret-gray-500
+  }
+  .btn-addCategory{
+    @apply  
+    text-sm md:text-base
+    px-3 py-[10%] 
+    border-solid
+    border-[1px]
+    border-blue-400
+    text-[#fff] 
+
+    bg-blue-400 
+    rounded-r-md
+    text-white
+
+
+    hover:text-blue-500  hover:bg-[#ffffff00] 
+    transition duration-[0.5s] ease-out;
+    
+  }
+  .btn-delete{
+    @apply text-white bg-red-500 mr-4 border-solid
+    border-[1px] border-red-500 rounded-full p-1 hover:text-red-500 hover:bg-white  transition duration-[0.5s] ease-out;
+  }
+  .list-layout{
+    @apply flex justify-between px-3 items-center  hover:bg-gray-200 hover:cursor-pointer border-b rounded-md 
+  }
+  .right-text1{
+    @apply text-violet-500
+  }
+  .right-text2{
+    @apply text-blue-500
+  }
+  .nameStyle{
+    @apply text-gray-500 hover:text-[#8076a3] font-mono
+  }
+
+.editbtn{
+  @apply  hover:text-purple-500
+}
+  .btn-update{
+  @apply  text-sm md:text-base
+    px-3 py-[7%] 
+    border-solid
+    border-[1px]
+    border-blue-400
+    
+    bg-blue-400 
+        text-white
+    hover:text-blue-500  hover:bg-[#ffffff00] 
+    transition duration-[0.5s] ease-out;
+    
+    
+  }
+  
+  .btn-cancel{
+    @apply  text-sm md:text-base
+      px-3 py-[0.4%] 
+      border-solid
+      border-[1px]
+      border-red-400
+      text-[#fff] 
+      ml-3
+      rounded-r-md
+      bg-red-400 
+      
+      text-white
+  
+  
+      hover:text-red-500  hover:bg-[#ffffff00] 
+      transition duration-[0.5s] ease-out;
+      
+      
+    }
+  .errorMsg{
+    @apply text-red-500 font-mono text-sm flex justify-center  
+  }
+
+  .tryDelete{
+    @apply text-sm md:text-base text-red-400 hover:text-red-500
+  }
+  .completedStatus{
+    @apply line-through text-red-500
+  }
+  .pointer{
+    @apply cursor-pointer hover:bg-gray-200
+  }
+  .tasksLayout{
+    @apply w-full  min-h-[150px] p-0 sm:p-5 rounded-md mb-3
+  }
+  .btn-taskcancel{
+    @apply  text-sm md:text-base
+      px-3 py-[0.4%] 
+      border-solid
+      border-[1px]
+      border-red-400
+      text-[#fff] 
+      ml-3
+      rounded-r-md
+      bg-red-400 
+      
+      text-white
+  mt-3
+  
+      hover:text-red-500  hover:bg-[#ffffff00] 
+      transition duration-[0.5s] ease-out;
+      
+      
+    }
+
+  .taskForm{
+    @apply border border-gray-100 h-fit max-w-3xl mx-auto bg-white shadow-sm rounded-md
+  }
+  .taskList{
+    @apply   max-w-3xl mx-auto px-1 pt-1  md:px-3 md:pt-1 pb-0   bg-white  
+  }
+  .taskInput{
+    @apply max-w-md mx-auto 
+  }
+  .btn-addTask{
+    @apply  
+    text-sm md:text-base
+    px-3 py-1
+    mt-3
+    border-solid
+    border-[1px]
+    border-blue-400
+    text-[#fff] 
+    bg-blue-400 
+    rounded-r-md
+    text-white
+    hover:text-blue-500  hover:bg-[#ffffff00] 
+    transition duration-[0.5s] ease-out;
+    
+  }
+  .footer{
+    @apply flex justify-center my-5 text-gray-500 font-mono
+  }
+  .footerName{
+    @apply text-blue-600 ml-2
+  }
+}
+
+
+
+
+.list-layout > div {
+  margin: 6px;
+
+}
+
+
